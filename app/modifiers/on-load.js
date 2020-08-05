@@ -8,7 +8,9 @@ export default class OnLoadModifier extends Modifier {
 
   onLoad() {
     let loadingPromise = new Promise((resolve, reject) => {
-      this.element.addEventListener('load', e => resolve());
+      this.element.addEventListener('load', () => {
+        resolve();
+      });
       this.element.addEventListener('error', () => {
         reject(new Error(`Failed to load`));
       });

@@ -1,4 +1,8 @@
 <div class="unsplash-photo">
-  <img src="{{@photo.urls.thumb}}" {{on-load this.setImageOnLoad}}/>
-  <div class="unsplash-details"><a href="{{@photo.links.html}}" target="_blank">{{@photo.user.name}}</a></div>
+  <img src="{{@photo.urls.thumb}}" alt="{{@photo.alt_description}}" {{on-load this.setImageOnLoad}}/>
+  <div class="unsplash-details">
+    <a href="{{@photo.links.html}}" target="_blank" rel="noopener noreferrer">
+      {{@photo.user.name}}
+    </a>
+  </div>
 </div>
