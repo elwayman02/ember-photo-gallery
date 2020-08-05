@@ -13,14 +13,5 @@ module('Integration | Component | unsplash-photo', function(hooks) {
     await render(hbs`<UnsplashPhoto />`);
 
     assert.equal(this.element.textContent.trim(), '');
-
-    // Template block usage:
-    await render(hbs`
-      <UnsplashPhoto>
-        template block text
-      </UnsplashPhoto>
-    `);
-
-    assert.equal(this.element.textContent.trim(), 'template block text');
   });
 });

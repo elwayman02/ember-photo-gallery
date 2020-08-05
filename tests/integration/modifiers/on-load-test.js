@@ -8,7 +8,8 @@ module('Integration | Modifier | on-load', function(hooks) {
 
   // Replace this with your real tests.
   test('it renders', async function(assert) {
-    await render(hbs`<div {{on-load}}></div>`);
+    this.onLoad = () => {};
+    await render(hbs`<div {{on-load this.onLoad}}></div>`);
 
     assert.ok(true);
   });
