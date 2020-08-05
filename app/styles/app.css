@@ -1,0 +1,20 @@
+.masonry-grid {
+  display: grid;
+  box-sizing: border-box;
+  grid-auto-rows: 1px;
+  justify-items: center;
+}
+
+.unsplash-photo {
+  padding: 5px;
+  background-color: darkturquoise;
+  border-radius: 8px;
+}
+
+.unsplash-photo img {
+  border-radius: 4px;
+}
+
+.unsplash-details {
+  text-align: center;
+}

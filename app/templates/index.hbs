@@ -1,0 +1,13 @@
+<MasonryGrid
+  @columns="auto"
+  @columnWidth="210px"
+  @columnGap="10px"
+  @rowGap="5px"
+  as |grid|
+>
+  {{#each model as |photo|}}
+    <grid.Item as |item|>
+      <UnsplashPhoto @photo={{photo}} @onLoadImage={{item.onLoaded}}/>
+    </grid.Item>
+  {{/each}}
+</MasonryGrid>

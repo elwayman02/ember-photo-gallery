@@ -1,0 +1,6 @@
+<div
+  class="masonry-item"
+  {{masonry-rows rowGap=@rowGap onLoad=this.onLoad}}
+>
+  {{yield (hash onLoaded=this.setLoadingPromise)}}
+</div>

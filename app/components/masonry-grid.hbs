@@ -1,0 +1,10 @@
+<div
+  class="masonry-grid"
+  {{masonry-columns
+    columns=@columns
+    columnWidth=@columnWidth
+    columnGap=@columnGap
+  }}
+>
+  {{yield (hash Item=(component 'masonry-item' rowGap=@rowGap))}}
+</div>
