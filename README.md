@@ -1,7 +1,9 @@
 # ember-photo-gallery
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This application is a demonstration of how to build a photo gallery using CSS Grid and Ember Modifiers. 
+It is powered by the [Unsplash API](https://unsplash.com/documentation).
+
+We adhere to the [Ember Community Guidelines](https://emberjs.com/guidelines/) for our Code of Conduct.
 
 ## Prerequisites
 
