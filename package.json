@@ -42,7 +42,7 @@
     "ember-modifier": "^2.1.1",
     "ember-qunit": "^4.6.0",
     "ember-resolver": "^8.0.2",
-    "ember-source": "~3.23.1",
+    "ember-source": "~3.24.0",
     "ember-template-lint": "^2.14.0",
     "ember-welcome-page": "^4.0.0",
     "eslint": "^7.14.0",
