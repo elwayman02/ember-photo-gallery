@@ -5,6 +5,6 @@ export default class IndexRoute extends Route {
   @service('unsplash') unsplash;
 
   model() {
-    return this.unsplash.listPhotos(1, 30, "latest");
+    return this.unsplash.listPhotos(1, 30, 'latest');
   }
 }

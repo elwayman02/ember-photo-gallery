@@ -13,7 +13,7 @@ export default class MasonryRowsModifier extends Modifier {
     if (this.onLoad) {
       this.onLoad.then(() => {
         this.calculateRowSpan();
-      })
+      });
     } else {
       this.calculateRowSpan();
     }
