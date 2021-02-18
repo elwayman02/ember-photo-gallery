@@ -6,7 +6,7 @@
   as |grid|
 >
   {{#each @model as |photo|}}
-    <grid.Item as |item|>
+    <grid.Item @async={{true}} as |item|>
       <UnsplashPhoto @photo={{photo}} @onLoadImage={{item.onLoaded}}/>
     </grid.Item>
   {{/each}}
