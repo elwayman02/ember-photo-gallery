@@ -5,7 +5,10 @@ export default class MasonryColumnsModifier extends Modifier {
     let gridStyle = getComputedStyle(this.element);
     let paddingLeft = parseFloat(gridStyle.getPropertyValue('padding-left'));
     let paddingRight = parseFloat(gridStyle.getPropertyValue('padding-right'));
-    return parseFloat(gridStyle.getPropertyValue('width')) - (paddingLeft + paddingRight);
+    return (
+      parseFloat(gridStyle.getPropertyValue('width')) -
+      (paddingLeft + paddingRight)
+    );
   }
 
   get columns() {
@@ -14,7 +17,9 @@ export default class MasonryColumnsModifier extends Modifier {
     let columnWidth = parseFloat(this.columnWidth);
 
     if (columns === 'auto') {
-      return Math.floor((this.gridWidth + columnGap)/(columnWidth + columnGap));
+      return Math.floor(
+        (this.gridWidth + columnGap) / (columnWidth + columnGap)
+      );
     }
 
     return parseFloat(columns);
