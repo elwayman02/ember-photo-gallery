@@ -13,8 +13,8 @@ export default class MasonryColumnsModifier extends Modifier {
 
   get columns() {
     let { columns } = this.args.named;
-    let columnGap = parseFloat(this.columnGap);
-    let columnWidth = parseFloat(this.columnWidth);
+    let columnGap = parseFloat(this.args.named.columnGap);
+    let columnWidth = parseFloat(this.args.named.columnWidth);
 
     if (columns === 'auto') {
       return Math.floor(
@@ -23,14 +23,6 @@ export default class MasonryColumnsModifier extends Modifier {
     }
 
     return parseFloat(columns);
-  }
-
-  get columnGap() {
-    return this.args.named.columnGap;
-  }
-
-  get columnWidth() {
-    return this.args.named.columnWidth;
   }
 
   didReceiveArguments() {
@@ -46,7 +38,7 @@ export default class MasonryColumnsModifier extends Modifier {
   }
 
   organizeGridColumns() {
-    this.element.style.gridTemplateColumns = `repeat(${this.columns}, ${this.columnWidth})`;
-    this.element.style.gridColumnGap = this.columnGap;
+    this.element.style.gridTemplateColumns = `repeat(${this.columns}, ${this.args.named.columnWidth})`;
+    this.element.style.gridColumnGap = this.args.named.columnGap;
   }
 }
