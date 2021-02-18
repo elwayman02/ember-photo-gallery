@@ -1,5 +1,5 @@
 import Service from '@ember/service';
-import Unsplash, { toJson } from 'unsplash-js';
+import { createApi } from 'unsplash-js';
 import { tracked } from '@glimmer/tracking';
 
 export default class UnsplashService extends Service {
@@ -8,14 +8,20 @@ export default class UnsplashService extends Service {
   constructor() {
     super(...arguments);
 
-    this.unsplash = new Unsplash({
+    this.unsplash = createApi({
       accessKey: 'PDDkBsP1QeYTG3enDn_vUI5wjRd5Zu7jlq7siePSGNo',
     });
   }
 
   listPhotos(page, perPage, orderBy) {
     return this.unsplash.photos
-      .listPhotos(page || 1, perPage || 30, orderBy || 'latest')
-      .then(toJson);
+      .list({
+        page: page || 1,
+        perPage: perPage || 30,
+        orderBy: orderBy || 'latest',
+      })
+      .then(function (photos) {
+        return photos.response.results;
+      });
   }
 }
