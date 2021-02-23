@@ -2,7 +2,7 @@
   display: grid;
   box-sizing: border-box;
   grid-auto-rows: 1px;
-  justify-items: center;
+  justify-content: center;
 }
 
 .unsplash-photo {
