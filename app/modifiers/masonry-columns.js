@@ -1,6 +1,8 @@
 import Modifier from 'ember-modifier';
 
 export default class MasonryColumnsModifier extends Modifier {
+  resizeObserver;
+
   get gridWidth() {
     let gridStyle = getComputedStyle(this.element);
     let paddingLeft = parseFloat(gridStyle.getPropertyValue('padding-left'));
@@ -35,6 +37,10 @@ export default class MasonryColumnsModifier extends Modifier {
     });
 
     this.resizeObserver.observe(this.element);
+  }
+
+  willDestroy() {
+    this.resizeObserver.disconnect();
   }
 
   organizeGridColumns() {
