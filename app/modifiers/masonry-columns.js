@@ -27,15 +27,19 @@ export default class MasonryColumnsModifier extends Modifier {
     return parseFloat(columns);
   }
 
+  constructor() {
+    super(...arguments);
+
+    this.resizeObserver = new ResizeObserver(() => {
+      this.organizeGridColumns();
+    });
+  }
+
   didReceiveArguments() {
     this.organizeGridColumns();
   }
 
   didInstall() {
-    this.resizeObserver = new ResizeObserver(() => {
-      this.organizeGridColumns();
-    });
-
     this.resizeObserver.observe(this.element);
   }
 
