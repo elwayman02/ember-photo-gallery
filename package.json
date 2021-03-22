@@ -60,7 +60,7 @@
     "prettier": "^2.2.1",
     "qunit": "^2.14.1",
     "qunit-dom": "^1.6.0",
-    "unsplash-js": "^7.0.4"
+    "unsplash-js": "^7.0.8"
   },
   "engines": {
     "node": "10.* || >= 12"
