@@ -11300,10 +11300,10 @@ unset-value@^1.0.0:
     has-value "^0.3.1"
     isobject "^3.0.0"
 
-unsplash-js@^7.0.8:
-  version "7.0.8"
-  resolved "https://registry.yarnpkg.com/unsplash-js/-/unsplash-js-7.0.8.tgz#87dd9987f93c4df150b35c50fb5728ede0f19e77"
-  integrity sha512-N0erXHPJZckhvzTJycaafBf8sesrtrZHz/gyL82tWiIxUgrBsU1diACb0dfYDRux2tIArAnZRWel581XhYixBA==
+unsplash-js@^7.0.10:
+  version "7.0.10"
+  resolved "https://registry.yarnpkg.com/unsplash-js/-/unsplash-js-7.0.10.tgz#9cb91e6131e1ef1408d0b12ffe5303875f86650c"
+  integrity sha512-seYZ31qO7RvV+zAUvH1423ySRFuamG/zF8S/XmDKWTaDzzqItwS5MnDk0KDZ3YXJ2vsJ4ddNj2BxXHiAA3eZBg==
   dependencies:
     "@types/content-type" "^1.1.3"
     content-type "^1.0.4"
