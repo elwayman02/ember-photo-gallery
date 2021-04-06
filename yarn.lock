@@ -873,16 +873,7 @@
   dependencies:
     "@babel/helper-plugin-utils" "^7.10.4"
 
-"@babel/plugin-transform-modules-amd@^7.12.1":
-  version "7.12.1"
-  resolved "https://registry.yarnpkg.com/@babel/plugin-transform-modules-amd/-/plugin-transform-modules-amd-7.12.1.tgz#3154300b026185666eebb0c0ed7f8415fefcf6f9"
-  integrity sha512-tDW8hMkzad5oDtzsB70HIQQRBiTKrhfgwC/KkJeGsaNFTdWhKNt/BiE8c5yj19XiGyrxpbkOfH87qkNg1YGlOQ==
-  dependencies:
-    "@babel/helper-module-transforms" "^7.12.1"
-    "@babel/helper-plugin-utils" "^7.10.4"
-    babel-plugin-dynamic-import-node "^2.3.3"
-
-"@babel/plugin-transform-modules-amd@^7.13.0":
+"@babel/plugin-transform-modules-amd@^7.12.1", "@babel/plugin-transform-modules-amd@^7.13.0":
   version "7.13.0"
   resolved "https://registry.yarnpkg.com/@babel/plugin-transform-modules-amd/-/plugin-transform-modules-amd-7.13.0.tgz#19f511d60e3d8753cc5a6d4e775d3a5184866cc3"
   integrity sha512-EKy/E2NHhY/6Vw5d1k3rgoobftcNUmp9fGjb9XZwQLtTctsRBOTRO7RHHxfIky1ogMN5BxN7p9uMA3SzPfotMQ==
@@ -5359,10 +5350,10 @@ ember-cli-version-checker@^5.1.1, ember-cli-version-checker@^5.1.2:
     semver "^7.3.4"
     silent-error "^1.1.1"
 
-ember-cli@~3.25.2:
-  version "3.25.2"
-  resolved "https://registry.yarnpkg.com/ember-cli/-/ember-cli-3.25.2.tgz#e48203adfb2e6ff8f93d88b602f2c7c3b1633be2"
-  integrity sha512-+SpcuOlmo2ccsCPGRUW7X7aIP0eUst81hu3ncK5TDuIivLEA1UQbWXvQaHlVxxmEzjWLNBOBm4ziOL/eHIVDvw==
+ember-cli@~3.25.3:
+  version "3.25.3"
+  resolved "https://registry.yarnpkg.com/ember-cli/-/ember-cli-3.25.3.tgz#9ceb694aafbdb48642fab748f970cdec98d6ad39"
+  integrity sha512-fMOjBamGAQ9aC0x8X0uZdtZ+l7/+dp/I1IRDfEE/4Zmmq94SBi5hW4RoO8/OF0OmaCxyIdnsZN43se6bxJ2yOw==
   dependencies:
     "@babel/core" "^7.12.10"
     "@babel/plugin-transform-modules-amd" "^7.12.1"
